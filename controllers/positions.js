@@ -12,7 +12,8 @@ async function getAll(req, res) {
   } catch (error) {
     console.error(error);
     res.json({
-      data: "something error"
+      data: [],
+      message: 'something error'
     });
   }
 }
@@ -29,7 +30,8 @@ async function get(req, res) {
   } catch (error) {
     console.error(error);
     res.json({
-      data: "something error"
+      data: null,
+      message: 'something error'
     });
   }
 }
